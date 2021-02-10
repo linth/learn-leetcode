@@ -25,3 +25,35 @@ What if elements of nums2 are stored on disk, and the memory is limited such tha
 Reference
     - https://leetcode.com/problems/intersection-of-two-arrays-ii/
 */
+
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number[]}
+ */
+
+ var intersect = (nums1, nums2) => {
+    let res = [];
+
+    for (let i=0, max=nums1.length; i<max; i++) {
+        for (let j=0, max_=nums2.length; j<max_; j++) {
+            if (nums1[i] === nums2[j] && nums1[i] !== null && nums2[j] !== null) {
+                res.push(nums1[i]);
+                nums1[i] = null, nums2[j] = null;
+            }
+        }
+    }
+    return res;
+};
+
+
+// var nums1 = [1, 2, 2, 1];
+// var nums2 = [2, 2];
+// var res = intersect(nums1, nums2);
+
+var nums1 = [4, 9, 5];
+var nums2 = [9, 4, 9, 8, 4];
+var res = intersect(nums1, nums2);
+console.log('res', res);
+
+
