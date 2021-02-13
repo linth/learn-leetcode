@@ -8,6 +8,8 @@ learn how to program code by leetcode.
 |5|[Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/string/5_Longest%20Palindromic%20Substring.py)|Medium|
 |11|[Container With Most Water](https://leetcode.com/problems/container-with-most-water/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/array/11_Container%20With%20Most%20Water.py)|Medium|
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/array/15_3Sum.py)|Medium|
+|19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/linked%20list/19_Remove%20Nth%20Node%20From%20End%20of%20List.py)|Medium|
+|20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/string/20_%20Valid%20Parentheses.py)|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Python]() [JavaScript](https://github.com/linth/learn-leetcode/blob/main/javascript/array/283_Move%20Zeroes.js)|Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[JavaScript](https://github.com/linth/learn-leetcode/blob/main/javascript/array/349_Intersection%20of%20Two%20Arrays.js)|Easy|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[JavaScript](https://github.com/linth/learn-leetcode/blob/main/javascript/array/350_Intersection%20of%20Two%20Arrays%20II.js)|Easy|
