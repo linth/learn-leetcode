@@ -10,6 +10,8 @@ learn how to program code by leetcode.
 |15|[3Sum](https://leetcode.com/problems/3sum/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/array/15_3Sum.py)|Medium|
 |19|[Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/linked%20list/19_Remove%20Nth%20Node%20From%20End%20of%20List.py)|Medium|
 |20|[Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/string/20_%20Valid%20Parentheses.py)|Easy|
+|21|[Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/linked%20list/21_Merge%20Two%20Sorted%20Lists.py)|Easy|
+|206|[Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/linked%20list/206_Reverse%20Linked%20List.py)|Easy|
 |283|[Move Zeroes](https://leetcode.com/problems/move-zeroes/)|[Python]() [JavaScript](https://github.com/linth/learn-leetcode/blob/main/javascript/array/283_Move%20Zeroes.js)|Easy|
 |349|[Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/)|[JavaScript](https://github.com/linth/learn-leetcode/blob/main/javascript/array/349_Intersection%20of%20Two%20Arrays.js)|Easy|
 |350|[Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii/)|[JavaScript](https://github.com/linth/learn-leetcode/blob/main/javascript/array/350_Intersection%20of%20Two%20Arrays%20II.js)|Easy|
