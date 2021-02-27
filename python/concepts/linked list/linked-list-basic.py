@@ -32,13 +32,13 @@ class SingleListedList:
     def traverse_list(self):
         pass
 
-    def reverse():
+    def reverse(self):
         pass
 
-    def oven_linked_list():
+    def oven_linked_list(self):
         pass
 
-    def odd_linked_list():
+    def odd_linked_list(self):
         pass
 
 
