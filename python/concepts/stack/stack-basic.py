@@ -35,7 +35,7 @@ class Stack(object):
         self.stack.append(data)
     
     def pop(self):
-        if not self.stack.is_empty():
+        if not self.is_empty():
             return self.stack.pop()
 
     def peek(self):
