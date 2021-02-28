@@ -27,7 +27,7 @@ class Queue(object):
         return len(self.queue) == 0
 
     def enqueue(self, data):
-        return self.queue.append(data())
+        return self.queue.append(data)
 
     def dequeue(self):
         return self.queue.pop(0)
