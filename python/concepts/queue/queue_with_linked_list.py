@@ -7,8 +7,8 @@ Reference:
 
 
 class Node:
+    """ the data structure of a node. """
     def __init__(self, data):
-        """ the data structure of a node. """
         self.data = data
         self.next = None
 
@@ -20,13 +20,13 @@ class Queue:
         self.rear = None
 
     def is_empty(self) -> bool:
-        return self.front == None
+        return self.front is None
 
     def enqueue(self, item):
         if not isinstance(item, Node):
             temp = Node(item)
 
-        if self.rear == None:
+        if self.rear is None:
             self.front = self.rear = temp
             return self
         self.rear.next = temp
