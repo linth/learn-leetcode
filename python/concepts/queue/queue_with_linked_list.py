@@ -36,7 +36,7 @@ class Queue:
     def dequeue(self) -> None:
         if self.is_empty():
             return
-        
+
         # delete the front of queue.
         self.front = self.front.next
 
@@ -61,7 +61,9 @@ if __name__ == '__main__':
     q.enqueue(30)
     q.dequeue()
     q.enqueue(2)
-    print(q.front.data, q.rear.data)
+    # q.dequeue()
+    # q.dequeue()
+    # q.dequeue()
 
     res = q.traverse_list()
     print('the result = ', res)
