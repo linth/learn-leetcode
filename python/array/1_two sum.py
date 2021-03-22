@@ -18,11 +18,32 @@ from typing import List
 
 class Solution(object):
     def twoSum(self, nums, target):
+        n = len(nums)
+
         for i, v in enumerate(nums):
-            for j in range(i+1, len(nums)):
-                # print('j', j, 'i', i)
+            for j in range(i+1, n):
                 if nums[i] + nums[j] == target:
                     return [i, j]
+    
+    def twoSum2(self, nums, target):
+        d = {}
+
+        for index, value in enumerate(nums):
+            diff = target - value
+            if diff not in d:
+                d[value] = index
+            else:
+                return [d[diff], index]
+
+    # def maxValueTwoSum(self, nums):
+    #     """ get max value for two numbers in an array. """
+    #     max_val = 0
+
+    #     for i in range(len(nums)):
+    #         for j in range(i+1, len(nums)):
+    #             if max_val <= nums[i] + nums[j]:
+    #                 max_val = nums[i] + nums[j]
+    #     return max_val
 
 
 if __name__ == '__main__':
@@ -30,6 +51,7 @@ if __name__ == '__main__':
     target = 9
 
     s = Solution()
-    res = s.twoSum(nums, target)
+    res = s.twoSum2(nums, target)
+    # res = s.maxValueTwoSum(nums)
     print('res', res)
     
