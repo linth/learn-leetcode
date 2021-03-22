@@ -18,13 +18,32 @@ Constraints:
 
 Reference:
     - https://leetcode.com/problems/3sum/
+    - https://medium.com/jacky-life/leetcode-3sum-bb1deec8ba31
 """
 from typing import List
 
 
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
-        pass
+
+        if len(nums) < 3:
+            return []
+
+        nums.sort()
+        ans_list = []
+
+        frist = 0
+        second = frist + 1
+        third = nums.length - 1
+
+        for frist in range(0, len(nums)):
+            if nums[frist] + nums[second] + nums[third] == 0:
+                res.append([nums[frist], nums[second], nums[third]])
+            elif nums[frist] + nums[second] + nums[third] < 0:
+                second += 1
+            else:
+                third -= 1
+
 
 
 if __name__ == '__main__':
