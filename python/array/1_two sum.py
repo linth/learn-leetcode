@@ -26,6 +26,7 @@ class Solution(object):
                     return [i, j]
     
     def twoSum2(self, nums, target):
+        """ 較佳解法 """
         d = {}
 
         for index, value in enumerate(nums):
@@ -71,7 +72,8 @@ if __name__ == '__main__':
     s = Solution()
     # res = s.twoSum(nums, target)
     # res = s.twoSum2(nums, target)
-    res = s.twoSum3(nums, target)
+    # res = s.twoSum3(nums, target)
+    res = s.twoSum4(nums, target)
     # res = s.maxValueTwoSum(nums)
     print('res', res)
     
