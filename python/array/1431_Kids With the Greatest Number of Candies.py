@@ -31,9 +31,27 @@ from typing import List
 
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
-        pass
+        """ 較佳解法 """
+        c = len(candies)
+        max_val = max(candies)
+        res = []
+
+        for i, v in enumerate(candies):
+            sum = v + extraCandies
+            if sum >= max_val:
+                res.append(True)
+            else:
+                res.append(False)
+
+        return res
 
 
 if __name__ == '__main__':
+    # c = [12,1,12]
+    c = [2,3,5,1,3]
+    # e = 10
+    e = 3
+
     s = Solution()
-    s.kidsWithCandies()
+    res = s.kidsWithCandies(c, e)
+    print('res', res)
