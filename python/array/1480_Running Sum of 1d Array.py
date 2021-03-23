@@ -29,6 +29,7 @@ from typing import List
 class Solution:
     @staticmethod
     def runningSum(nums: List[int]) -> List[int]:
+        """ 較佳解法 """
         sum = 0
         new_arr = []
 
