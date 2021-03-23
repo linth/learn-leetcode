@@ -25,10 +25,27 @@ from typing import List
 
 class Solution:
     def shuffle(self, nums: List[int], n: int) -> List[int]:
-        pass
+        """ 較佳解法 """
+        n = len(nums)
+        res = []
+        second = int(n/2)
+
+        # check the element equal to 2n.
+        if n % 2 != 0:
+            return []
+
+        for i in range(0, int((n/2))):
+            res.append(nums[i])
+            res.append(nums[second])
+            second += 1
+        return res
 
 
 if __name__ == '__main__':
+    nums = [2,5,1,3,4,7]
+    n = 3
+
     s = Solution()
-    s.shuffle()
+    res = s.shuffle(nums, n)
+    print('res', res)
 
