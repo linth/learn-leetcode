@@ -33,10 +33,24 @@ from typing import List
 
 class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
-        pass
+        """ 較佳解法 """
+        max_val = 0
+
+        for i, v in enumerate(accounts):
+            sub_sum = 0
+            for j in v:
+                sub_sum += j
+
+            if sub_sum >= max_val:
+                max_val = sub_sum
+        return max_val
 
 
 if __name__ == '__main__':
+    accounts = [[1,5],[7,3],[3,5]]
+
     s = Solution()
-    s.maximumWealth()
+    res = s.maximumWealth(accounts)
+    print('res', res)
+
 
