@@ -15,32 +15,35 @@ Constraints:
 
 Reference:
     - https://leetcode.com/problems/reverse-linked-list/
+    - https://www.youtube.com/watch?v=QuWBvSx9DeI
+
+Others:
+    - (stack and heap底層概念) https://nwpie.blogspot.com/2017/05/5-stack-heap.html
 """
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
 
 
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
-        print(f'the origin ListNode: {head}')
-        # prev_node = None
-        # curr_node = head
-        # while curr_node:
-        #     next_node = curr_node.next # Remember next node
-        #     curr_node.next = prev_node  # REVERSE! None, first time round.
-        #     prev_node = curr_node  # Used in the next iteration.
-        #     curr_node = next_node  # Move to next node.
-        # head = prev_node
-        return head
+        # prev, curr, head, nxt 皆為reference
+        prev, curr, nxt = None, head, None
+        
+        while curr:
+            nxt = curr.next
+            
+            curr.next = prev
+            prev = curr
+            curr = nxt
+        return prev
 
 
-if __name__ == '__main__':
-    head = [1, 2, 3, 4, 5]
-
-    s = Solution()
-    res = s.reverseList(head)
-    print(f'after reversing, the result = {res}')
+# if __name__ == '__main__':
+#     head = [1, 2, 3, 4, 5]
+#     s = Solution()
+#     res = s.reverseList(head)
+#     print(f'after reversing, the result = {res}')
         
