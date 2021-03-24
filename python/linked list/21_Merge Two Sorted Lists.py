@@ -20,6 +20,7 @@ Constraints:
 
 Reference:
     - https://leetcode.com/problems/merge-two-sorted-lists/
+    - https://www.youtube.com/watch?v=Z7VOBq6S5n8
 """
 # Definition for singly-linked list.
 class ListNode:
@@ -30,13 +31,26 @@ class ListNode:
 
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
-        return l1, l2
+        """ 較佳解法 """
+        # dumy的ListNode主要是提供return之後給的完整地linked list.
+        curr = dumy = ListNode(0)
+        
+        while l1 and l2:
+            if l1.val < l2.val:
+                curr.next = l1
+                l1 = l1.next
+            else:
+                curr.next = l2
+                l2 = l2.next
+            curr = curr.next
+        curr.next = l1 or l2
+        return dumy.next
         
 
-if __name__ == '__main__':
-    l1 = [1, 2, 4]
-    l2 = [1, 3, 4]
+# if __name__ == '__main__':
+#     l1 = [1, 2, 4]
+#     l2 = [1, 3, 4]
 
-    s = Solution()
-    res = s.mergeTwoLists(l1, l2)
-    print(f'the result = {res}')
+#     s = Solution()
+#     res = s.mergeTwoLists(l1, l2)
+#     print(f'the result = {res}')
