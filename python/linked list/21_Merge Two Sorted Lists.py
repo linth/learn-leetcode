@@ -30,7 +30,8 @@ class ListNode:
 
 
 class Solution:
-    def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
+    def mergeTwoLists(self, l1, l2):
+        # Runtime: 32 ms, faster than 92.07%
         """ 較佳解法 """
         # dumy的ListNode主要是提供return之後給的完整地linked list.
         curr = dumy = ListNode(0)
@@ -48,9 +49,9 @@ class Solution:
         
 
 # if __name__ == '__main__':
-#     l1 = [1, 2, 4]
-#     l2 = [1, 3, 4]
+    # l1 = [1, 2, 4]
+    # l2 = [1, 3, 4]
 
-#     s = Solution()
-#     res = s.mergeTwoLists(l1, l2)
-#     print(f'the result = {res}')
+    # s = Solution()
+    # res = s.mergeTwoLists(l1, l2)
+    # print(f'the result = {res}')
