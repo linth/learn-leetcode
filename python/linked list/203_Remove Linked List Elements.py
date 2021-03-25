@@ -21,6 +21,7 @@ Constraints:
 
 # Reference
     - https://leetcode.com/problems/remove-linked-list-elements/
+    - https://www.youtube.com/watch?v=nwXxL2KtV1Y
 """
 
 class ListNode:
@@ -30,10 +31,23 @@ class ListNode:
 
 
 class Solution:
-    def removeElements(self, head: ListNode, val: int) -> ListNode:
-        pass
+    def removeElements(self, head: ListNode, val: int):
+        # Runtime: 76 ms, faster than 21.56%, Memory Usage: 17.3 MB, less than 24.64%
+        """ 較佳解法 """
+        dummy = ListNode(float('-inf'))
+        dummy.next = head
+        
+        prev, curr = dummy, dummy.next
+        
+        while curr:
+            if curr.val == val:
+                prev.next = curr.next
+            else:
+                prev = curr
+            curr = curr.next
+        return dummy.next
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     pass
 
