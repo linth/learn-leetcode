@@ -36,6 +36,7 @@ Constraints:
 
 # Reference
     - https://leetcode.com/problems/delete-node-in-a-linked-list/
+    - https://www.youtube.com/watch?v=h31V102rLnE
 """
 
 class ListNode:
@@ -46,10 +47,14 @@ class ListNode:
 
 class Solution:
     def deleteNode(self, node):
-        pass
+        # Runtime: 32 ms, faster than 95.52%, Memory Usage: 14.7 MB, less than 65.28%
+        """ 較佳解法 """
+        if node and node.next:
+            node.val = node.next.val
+            node.next = node.next.next
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     pass
 
 
