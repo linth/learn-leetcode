@@ -20,6 +20,7 @@ Constraints:
 
 # Reference
     - https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+    - https://www.youtube.com/watch?v=_Ebv4IC2MkY
 """
 
 class ListNode:
