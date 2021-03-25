@@ -26,18 +26,22 @@ There are 3 nodes before the intersected node in A; There are 1 node before the 
 
 
 Constraints:
+- The number of nodes of listA is in the m.
+- The number of nodes of listB is in the n.
+- 0 <= m, n <= 3 * 104
+- 1 <= Node.val <= 105
+- 0 <= skipA <= m
+- 0 <= skipB <= n
+- intersectVal is 0 if listA and listB do not intersect.
+- intersectVal == listA[skipA + 1] == listB[skipB + 1] if listA and listB intersect.
 
-The number of nodes of listA is in the m.
-The number of nodes of listB is in the n.
-0 <= m, n <= 3 * 104
-1 <= Node.val <= 105
-0 <= skipA <= m
-0 <= skipB <= n
-intersectVal is 0 if listA and listB do not intersect.
-intersectVal == listA[skipA + 1] == listB[skipB + 1] if listA and listB intersect.
+
+Follow up: Could you write a solution that runs in O(n) time and use only O(1) memory?
+
 
 # Reference
     - https://leetcode.com/problems/intersection-of-two-linked-lists/
+    - https://www.youtube.com/watch?v=obNV22YH1Nk
 """
 
 class ListNode:
@@ -47,10 +51,26 @@ class ListNode:
 
 
 class Solution:
-    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> ListNode:
-        pass
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode):
+        # Runtime: 168 ms, faster than 43.18%, Memory Usage: 29.5 MB, less than 62.03%
+        """ 較佳解法 """
+        p1 = headA
+        p2 = headB
+        
+        while p1 != p2:
+            if not p1:
+                p1 = headB
+            else:
+                p1 = p1.next
+            
+            if not p2:
+                p2 = headA
+            else:
+                p2 = p2.next
+            
+        return p2
 
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     pass
