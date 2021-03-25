@@ -29,10 +29,32 @@ class ListNode:
 
 
 class Solution:
-    def deleteDuplicates(self, head: ListNode) -> ListNode:
-        pass
+    def deleteDuplicates(self, head: ListNode):
+        # Runtime: 36 ms, faster than 93.79%, Memory Usage: 14.2 MB, less than 84.54%
+        """ 較佳解法 """
+        curr = head
+        
+        while curr:
+            runner = curr.next
+            while runner and curr.val == runner.val:
+                runner = runner.next
+            curr.next = runner
+            curr = runner
+        return head
+
+    def deleteDuplicates2(self, head: ListNode):
+        # Runtime: 40 ms, faster than 80.03%, Memory Usage: 14 MB, less than 99.46%
+        curr = nxt = head
+        
+        while curr:
+            nxt = curr.next
+            while nxt and curr.val == nxt.val:
+                nxt = nxt.next
+            curr.next = nxt
+            curr = nxt
+        return head
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     pass
 
