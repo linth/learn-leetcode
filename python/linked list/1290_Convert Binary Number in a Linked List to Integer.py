@@ -42,10 +42,17 @@ class ListNode:
 
 
 class Solution:
-    def getDecimalValue(self, head: ListNode) -> int:
-        pass
+    def getDecimalValue(self, head: ListNode):
+        # Runtime: 32 ms, faster than 62.21%, Memory Usage: 14.3 MB, less than 41.23%
+        """ 較佳解法 """
+        ans = 0
+        
+        while head:
+            ans = ans * 2 + head.val
+            head = head.next
+        return ans
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     pass
 
