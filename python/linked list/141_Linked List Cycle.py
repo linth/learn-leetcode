@@ -27,8 +27,13 @@ Constraints:
 - -105 <= Node.val <= 105
 - pos is -1 or a valid index in the linked-list.
 
+
+Follow up: Can you solve it using O(1) (i.e. constant) memory?
+
+
 # Reference 
     - https://leetcode.com/problems/linked-list-cycle/
+    - https://www.youtube.com/watch?v=9SD2ccDW5CY
 """
 
 class ListNode:
@@ -38,9 +43,17 @@ class ListNode:
 
 
 class Solution:
-    def hasCycle(self, head: ListNode) -> bool:
-        pass
+    def hasCycle(self, head: ListNode):
+        # Runtime: 48 ms, faster than 89.78%, Memory Usage: 17.6 MB, less than 51.35%.
+        """ 較佳解法 """
+        fast, slow = head, head
+        
+        while fast and fast.next:
+            fast, slow = fast.next.next, slow.next
+            if fast == slow:
+                return True
+        return False
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     pass
