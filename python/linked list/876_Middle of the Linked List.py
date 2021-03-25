@@ -21,6 +21,7 @@ The number of nodes in the given list will be between 1 and 100.
 
 # Reference 
     - https://leetcode.com/problems/middle-of-the-linked-list/
+    - https://www.youtube.com/watch?v=u0vcs_jZ1A8
 """
 
 
@@ -31,10 +32,17 @@ class ListNode:
 
 
 class Solution:
-    def middleNode(self, head: ListNode) -> ListNode:
-        pass
+    def middleNode(self, head: ListNode):
+        # Runtime: 24 ms, faster than 94.81%, Memory Usage: 14.3 MB, less than 45.40%
+        """ 較佳解法 """
+        a = []
+        
+        while head:
+            a.append(head)
+            head = head.next        
+        return a[int(len(a) / 2)]
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     pass
 
