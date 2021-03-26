@@ -16,7 +16,8 @@ Reference:
 
 
 class Solution(object):
-    def lengthOfLongestSubstring(self, s: str) -> int:
+    def lengthOfLongestSubstring(self, s: str):
+        """ hash map. """
         d = {}
         j, ans = 0, 0
         for i in range(len(s)):
@@ -25,6 +26,11 @@ class Solution(object):
             ans = max(ans, i-j+1)
             d[s[i]] = i+1
         return ans
+
+    def lengthOfLongestSubstring2(self, s: str):
+        """ brute force. """
+        # https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/
+        pass
 
 
 if __name__ == '__main__':
