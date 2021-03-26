@@ -18,6 +18,7 @@ from typing import List
 
 class Solution(object):
     def twoSum(self, nums, target):
+        """ brute force. """
         n = len(nums)
 
         for i, v in enumerate(nums):
@@ -53,6 +54,14 @@ class Solution(object):
                 begin += 1
             else:
                 end -= 1
+
+    def twoSum4(self, nums, target):
+        """ two-pass hash table. """
+        pass
+
+    def twoSum5(self, nums, taget):
+        """ one-pass hash table. """
+        pass
 
     # def maxValueTwoSum(self, nums):
     #     """ get max value for two numbers in an array. """
