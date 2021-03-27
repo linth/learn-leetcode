@@ -20,12 +20,32 @@ Output: 1
 Reference
     - https://leetcode.com/problems/single-number/
 """
+from typing import List
+
 
 class Solution:
     def singleNumber(self, nums: List[int]):
-        pass
+        # Runtime: 140 ms, faster than 42.39%, Memory Usage: 16.7 MB, less than 23.47%
+        """ 較佳解法 """
+        d, res = {}, None
+        
+        for i in nums:
+            if i not in d:
+                d[i] = 1
+            else:
+                d[i] += 1
+        
+        for i,v in d.items():
+            if v == 1:
+                res = i
+        return res
 
 
 if __name__ == '__main__':
-    pass
+    nums = [4,1,2,1,2]
+
+    s = Solution()
+    res = s.singleNumber(nums)
+    print('res', res)
+
 
