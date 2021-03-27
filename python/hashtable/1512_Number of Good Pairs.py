@@ -27,13 +27,22 @@ Constraints:
 
 # Reference 
     - https://leetcode.com/problems/number-of-good-pairs/
+    - https://www.youtube.com/watch?v=ryykpSW-g4M
 
 """
+from typing import List
+
 
 class Solution:
     def numIdenticalPairs(self, nums: List[int]):
-        pass
-
+        # Runtime: 32 ms, faster than 77.55%, Memory Usage: 14.3 MB, less than 11.53%
+        """ 較佳解法 """
+        d, count = {}, 0
+        
+        for i in nums:
+            count += d.setdefault(i, 0)
+            d[i] += 1
+        return count
 
 
 if __name__ == '__main__':
@@ -42,4 +51,12 @@ if __name__ == '__main__':
     s = Solution()
     res = s.numIdenticalPairs(nums)
     print('res', res)
+
+
+    # setdefault 用法
+    d = {'Name': 'Zara', 'Age': 7}
+    d.setdefault('Age', None) # 7 
+    d.setdefault('Sex', None) # None.
+
+    
 
