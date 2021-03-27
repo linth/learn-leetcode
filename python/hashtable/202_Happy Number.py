@@ -28,11 +28,24 @@ Constraints:
 
 Reference
     - https://leetcode.com/problems/happy-number/
+    - https://www.polarxiong.com/archives/LeetCode-202-happy-number.html
 """
 
 class Solution:
     def isHappy(self, n: int):
-        pass
+        # Runtime: 32 ms, faster than 83.59%, Memory Usage: 14.2 MB, less than 50.94%
+        """ 較佳解法 """
+        s = set()
+
+        while n != 1 and n not in s:
+            s.add(n)
+            sum = 0
+
+            while n:
+                sum += (n % 10)**2
+                n //= 10
+            n = sum
+        return n == 1
 
 
 if __name__ == '__main__':
