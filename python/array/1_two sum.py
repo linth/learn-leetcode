@@ -60,6 +60,11 @@ class Solution(object):
                 return [d[diff], index]
 
     def twoSum3(self, nums, target):
+        """
+        :param nums:
+        :param target:
+        :return:
+        """
         # two points.
         begin, end = 0, len(nums) - 1
 
