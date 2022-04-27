@@ -17,8 +17,24 @@ from typing import List
 
 
 class Solution(object):
+    def twoSum0(self, nums, target):
+        """
+        nums = [2, 7, 11, 15], target = 9
+
+        :param nums:
+        :param target:
+        :return:
+        """
+        pass
+
     def twoSum(self, nums, target):
-        """ brute force. """
+        """
+        brute force.
+
+        :param nums:
+        :param target:
+        :return:
+        """
         n = len(nums)
 
         for i, v in enumerate(nums):
@@ -27,7 +43,13 @@ class Solution(object):
                     return [i, j]
     
     def twoSum2(self, nums, target):
-        """ 較佳解法 """
+        """
+        較佳解法
+
+        :param nums:
+        :param target:
+        :return:
+        """
         d = {}
 
         for index, value in enumerate(nums):
@@ -75,7 +97,7 @@ class Solution(object):
 
 
 if __name__ == '__main__':
-    nums = [2,11,7,15]
+    nums = [2, 11, 7, 15]
     target = 9
 
     s = Solution()
