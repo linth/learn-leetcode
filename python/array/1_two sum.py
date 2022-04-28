@@ -55,7 +55,7 @@ class Solution(object):
         for index, value in enumerate(nums):
             diff = target - value
             if diff not in d:
-                d[value] = index
+                d[value] = index # {value: index}
             else:
                 return [d[diff], index]
 
