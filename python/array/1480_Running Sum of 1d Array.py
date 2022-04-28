@@ -28,10 +28,14 @@ from typing import List
 
 class Solution:
     @staticmethod
+    def runningSum0(nums):
+        pass
+
+    @staticmethod
     def runningSum(nums: List[int]) -> List[int]:
         """ 較佳解法 """
         sum = 0
-        new_arr = []
+        new_arr = [] # 你也可以使用取代方式來進行，這樣就可以不用額外新增新的array
 
         for i in nums:
             sum += i
@@ -44,3 +48,6 @@ if __name__ == '__main__':
     s = Solution()
     res = s.runningSum(nums)
     print(f'the result is {res}')
+
+    # res0 = s.runningSum0(nums)
+    # print(f'the result is {res0}')
