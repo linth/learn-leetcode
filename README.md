@@ -22,7 +22,7 @@ learn how to program code by leetcode.
 
 # Data Structure
 ## Array
-![array](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ewdna.com%2F2012%2F02%2Fjavaarray-to-string-string-to-array.html&psig=AOvVaw3r1YiWacV4fhA5i2dxROzG&ust=1651388188522000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNiKtMmau_cCFQAAAAAdAAAAABAE)
+![](https://3.bp.blogspot.com/-iW1383oDh5o/T0Mw5fsjwwI/AAAAAAAAF1M/TMXUC8JZpig/s1600/array.png)
 
 ## Linked list
 
