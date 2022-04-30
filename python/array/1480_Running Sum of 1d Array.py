@@ -27,12 +27,10 @@ from typing import List
 
 
 class Solution:
-    @staticmethod
-    def runningSum0(nums):
+    def runningSum0(self, nums):
         pass
 
-    @staticmethod
-    def runningSum(nums: List[int]) -> List[int]:
+    def runningSum(self, nums: List[int]) -> List[int]:
         """ 較佳解法 """
         sum = 0
         new_arr = [] # 你也可以使用取代方式來進行，這樣就可以不用額外新增新的array
