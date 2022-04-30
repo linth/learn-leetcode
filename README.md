@@ -18,3 +18,53 @@ learn how to program code by leetcode.
 |933|[Number of Recent Calls](https://leetcode.com/problems/number-of-recent-calls/)|[Python](https://github.com/linth/learn-leetcode/blob/main/python/queue/933_Number%20of%20Recent%20Calls.py)|Easy|
 |1431|[Kids With the Greatest Number of Candies](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/)|[Python](https://github.com/linth/learn-leetcode/blob/main/array/1431_Kids%20With%20the%20Greatest%20Number%20of%20Candies.py)|Easy|
 |1470|[Shuffle the Array](https://leetcode.com/problems/shuffle-an-array/)|[Python](https://github.com/linth/learn-leetcode/blob/main/array/1431_Kids%20With%20the%20Greatest%20Number%20of%20Candies.py)|Medium|
+
+
+# Data Structure
+## Array
+![array](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.ewdna.com%2F2012%2F02%2Fjavaarray-to-string-string-to-array.html&psig=AOvVaw3r1YiWacV4fhA5i2dxROzG&ust=1651388188522000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCNiKtMmau_cCFQAAAAAdAAAAABAE)
+
+## Linked list
+
+## String
+
+## Stack
+
+## Queue/Dequeue
+
+## Heap
+
+## Hashtable / Hashmap
+
+## Tree
+
+## Graph
+
+---
+
+# Algorithm
+## Sorting
+- 氣泡
+- 插入
+- 合併
+- 選擇
+- 堆積
+- 快速
+
+## Searching
+- linear search
+- binary search
+
+## Graph searching
+- Depth-first search
+- Breath-first search
+- Greedy
+- Binary search tree
+- Binary indexed tree
+- Segment tree
+
+## Security
+
+## Grouping
+
+## Others
