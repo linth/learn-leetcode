@@ -1,8 +1,9 @@
 # Binary Tree Traversal 二元樹遍歷
 遍歷二元樹 (Binary Tree Traversal) 的順序有三種，分別是
-- 前序 (preorder)
-- 中序 (inorder)
-- 後序 (postorder)
+- 前序 (preorder), [refer to youtube]()
+- 中序 (inorder), [refer to youtube](https://www.youtube.com/watch?v=dM7Rib6hjsc)
+- 後序 (postorder), [refer to youtube]()
+
 
 遍歷二元樹實作又可以分為遞迴 (recursive) 和迭代 (iterative) 兩種版本，本篇文章將介紹迭代遍歷二元樹 (iterative binary tree traversal) 的三種方法。
 
