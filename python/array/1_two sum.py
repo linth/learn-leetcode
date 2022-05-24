@@ -27,7 +27,7 @@ class Solution(object):
         """
         pass
 
-    def twoSum(self, nums, target):
+    def brute_force(self, nums, target):
         """
         brute force.
 
@@ -42,6 +42,24 @@ class Solution(object):
                 if nums[i] + nums[j] == target:
                     return [i, j]
     
+    def use_sorting(self, nums, target):
+        """ 這樣的方法似乎不適用，因為sorting完後會破壞整個list. """
+        # sort the list.
+        nums.sort()
+
+        # maintain two indices
+        (low, high) = (0, len(nums)-1)
+
+        while low < high:
+            if nums[low] + nums[high] == target:
+                return (low, high)
+
+            if nums[low] + nums[high] < target:
+                low = low + 1
+            else:
+                high = high - 1
+
+
     def twoSum2(self, nums, target):
         """
         較佳解法
@@ -52,12 +70,14 @@ class Solution(object):
         """
         d = {}
 
-        for index, value in enumerate(nums):
-            diff = target - value
+        for k, v in enumerate(nums):
+            diff = target - v
+
+            # 使用dict來記錄value的index值。
             if diff not in d:
-                d[value] = index # {value: index}
+                d[v] = k # {value: index}
             else:
-                return [d[diff], index]
+                return [d[diff], k]
 
     def twoSum3(self, nums, target):
         """
