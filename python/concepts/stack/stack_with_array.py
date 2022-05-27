@@ -1,16 +1,17 @@
 """
 Stack implementation with array.
 
-- list
-- queue
-- linked list
+- list (可以使用 list 來實作)
+- queue (可以使用 collections' deque 來實作)
+- linked list (可以參考 stack_with_linked_list.py)
 
 Reference:
     - https://www.geeksforgeeks.org/stack-in-python/
+    - https://www.geeksforgeeks.org/stack-in-python/?ref=lbp
 """
 from queue import LifoQueue
 
-
+# 使用 list 來處理
 s = []
 
 s.append('a')
