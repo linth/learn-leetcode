@@ -36,9 +36,35 @@ Reference
 #         self.right = right
 class Solution:
     def maxDepth(self, root: TreeNode):
-        pass
+        # recursive method.
+        if not root:
+            return 0
+                
+        return max(self.maxDepth(root.left), self.maxDepth(root.right)) + 1
 
-
+    def use_iterative(self, root):
+        # iterative method.
+        if not root:
+            return 0
+        
+        level = 0 # how many level.
+        worklist = [root]
+        num_node_level = 1 
+        
+        while worklist:
+            node = worklist.pop(0)
+            
+            if node.left:
+                worklist.append(node.left)                
+            if node.right:
+                worklist.append(node.right)
+            
+            num_node_level -= 1
+            if num_node_level == 0:
+                level += 1
+                num_node_level = len(worklist)
+        return level
+    
 if __name__ == '__main__':
     root = [0]
 

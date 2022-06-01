@@ -31,7 +31,45 @@ Reference
 #         self.right = right
 class Solution:
     def invertTree(self, root: TreeNode):
-        pass
+        
+        # recursive method
+        return self.use_recursive(root)
+    
+        # bfs method
+        #return self.use_bfs(root)
+        
+        # dfs method
+        #return self.use_dfs(root)
+        
+    
+    def use_recursive(self, root):
+        if root:
+            root.left, root.right = self.invertTree(root.right), self.invertTree(root.left)
+
+        return root
+    
+    def use_bfs(self, root):
+        # bfs method
+        queue = [root]
+        
+        while queue:
+            node = queue.pop(0)
+            if node:
+                node.left, node.right = node.right, node.left
+                queue.append(node.left)
+                queue.append(node.right)
+        return root
+    
+    def use_dfs(self, root):
+        # dfs method
+        stack = [root]
+        
+        while stack:
+            node = stack.pop()
+            if node:
+                node.left, node.right = node.right, node.left
+                stack.extend([node.right, node.left])       
+        return root
 
 
 if __name__ == '__main__':
@@ -41,3 +79,10 @@ if __name__ == '__main__':
     res = s.invertTree(root)
     print('res', res)
 
+
+
+
+
+
+    
+    
