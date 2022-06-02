@@ -42,9 +42,37 @@ Reference
 #         self.left = left
 #         self.right = right
 class Solution:
-    def inorderTraversal(self, root: TreeNode):
-        pass
-
+    def inorderTraversal(self, root: TreeNode) -> List[int]:
+        # for recursive
+        # return self.use_recursive(root)
+    
+        # for iterative
+        return self.use_iterative(root)
+        
+    def use_recursive(self, root):
+        if not root:
+            return []
+        
+        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+    
+    
+    
+    def use_iterative(self, root):
+        
+        stack = [] # put root: TreeNode into this list.
+        result = [] # final result.
+        
+        while root is not None or stack != []:
+            while root is not None:
+                stack.append(root)
+                root = root.left
+            root = stack.pop()
+            result.append(root.val)
+            root = root.right
+        return result
 
 if __name__ == '__main__':
-    pass
+    s = Solution()
+    root = [1,null,2]
+    res = s.inorderTraversal(root)
+    print('res', res)
