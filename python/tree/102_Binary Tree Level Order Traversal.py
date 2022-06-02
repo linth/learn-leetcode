@@ -36,6 +36,15 @@ class Solution:
         if root is None:
             return []
         
+        # queue = [node, node.left, node.right]
+        # next_queue = [node.left, node.right]
+        # level = [node.val]
+        
+        # result = level
+        # leve = []
+        # queue = next_queue
+        # next_queue = []
+        
         queue, next_queue = [root], []
         level, result = [], []
         
