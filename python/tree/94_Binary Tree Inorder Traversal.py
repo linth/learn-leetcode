@@ -33,6 +33,7 @@ Recursive solution is trivial, could you do it iteratively?
 
 Reference
     - https://leetcode.com/problems/binary-tree-inorder-traversal/
+    - (youtube) https://www.youtube.com/watch?v=RJhh3Jcc9zw
 """
 # Definition for a binary tree node.
 # class TreeNode:
