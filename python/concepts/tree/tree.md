@@ -19,6 +19,10 @@
 中序 (inorder): 左 -> 中 -> 右，1234567。注意：對二元搜尋樹 (binary search tree, BST) 做 inorder traversal 就是由小到大依序遍歷。
 後序 (postorder): 左 -> 右 -> 中，1325764
 
+前序、中序、後序的順序差異在於 中間放在那邊?
+    - 前: 中間放第一個
+    - 中: 中間放第二個
+    - 後: 中間放第三個
 
 [!](https://assets.leetcode.com/users/andvary/image_1556551007.png)
 
