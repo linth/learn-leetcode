@@ -22,6 +22,7 @@ Constraints:
 
 Reference
     - https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+    - https://www.youtube.com/watch?v=0K0uCMYq5ng
 """
 # Definition for a binary tree node.
 # class TreeNode:
@@ -31,7 +32,16 @@ Reference
 #         self.right = right
 class Solution:
     def sortedArrayToBST(self, nums: List[int]):
-        pass
+        if not nums:
+            return None
+
+        mid = len(nums) // 2
+
+        root = TreeNode(nums[mid])
+        root.left = self.sortedArrayToBST(nums[:mid])
+        root.right = self.sortedArrayToBST(nums[mid+1:])
+
+        return root
 
 
 if __name__ == '__main__':
