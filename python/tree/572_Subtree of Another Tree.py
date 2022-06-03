@@ -24,6 +24,8 @@ The number of nodes in the subRoot tree is in the range [1, 1000].
 -104 <= root.val <= 104
 -104 <= subRoot.val <= 104
 
+Reference:
+    - https://www.youtube.com/watch?v=E36O5SWp-LE
 '''
 
 # Definition for a binary tree node.
