@@ -40,5 +40,5 @@ if __name__ == '__main__':
     if res.right != None:
         print('right val', res.right.val)
     
-    
+    print(root) # <__main__.Node object at 0x000002C0AF77AC40>
     
