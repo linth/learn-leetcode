@@ -42,7 +42,8 @@ def postorder(root):
 def levelorder(root):
         
     queue, next_queue = [root], []
-    level, result = [], []
+    # level = []
+    result = []
     
     while queue != []:
         for i in queue:
@@ -53,7 +54,7 @@ def levelorder(root):
             if i.right is not None:
                 next_queue.append(i.right)
         # result.append(level)
-        level = []
+        # level = []
         queue = next_queue
         next_queue = []
     return result
