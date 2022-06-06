@@ -1,5 +1,5 @@
 # Binary Tree Traversal 二元樹遍歷
-遍歷二元樹 (Binary Tree Traversal) 的 Traversal 順序有三種，分別是
+遍歷二元樹 (Binary Tree Traversal) 的 Traversal 順序有四種，分別是
 - 前序 (preorder), [refer to youtube]()
 - 中序 (inorder), [refer to youtube](https://www.youtube.com/watch?v=dM7Rib6hjsc)
 - 後序 (postorder), [refer to youtube]()
