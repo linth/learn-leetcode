@@ -34,7 +34,7 @@ The tree consists only of the root, its left child, and its right child.
 #         self.left = left
 #         self.right = right
 class Solution:
-    def checkTree(self, root: Optional[TreeNode]) -> bool:
+    def checkTree(self, root):
         return root.val == (root.left.val + root.right.val)
     
 
