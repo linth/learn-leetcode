@@ -19,7 +19,7 @@ class Node:
     def set_left(self, n):
         self.left = n
         return self
-        
+
 
 class Solution:
     def preorderTraversal(self, root):
@@ -52,7 +52,7 @@ class Solution:
             root = stack.pop()
             result.append(root.val)
             root = root.right
-        return result    
+        return result
     
     def postorderTraversal(self, root):
         # [left, right, root]
