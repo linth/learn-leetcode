@@ -1,4 +1,8 @@
 '''
+BFS 廣度優先搜尋演算法
+    - 首先他是個演算法，換言之，可以使用他的概念在不同的資料結構下查詢排列。
+    - 通常運用此演算法的有 graph 和 tree
+    
 
 Reference:
     - https://medium.com/%E7%A8%8B%E5%BC%8F%E4%B9%BE%E8%B2%A8/binarytree-%E5%BB%A3%E5%BA%A6%E6%90%9C%E5%B0%8Bbfs-vs-%E6%B7%B1%E5%BA%A6%E6%90%9C%E5%B0%8Bdfs-ad51a9ca5d68
@@ -60,3 +64,4 @@ print(bfs_tra2(r))
 # 請注意寫法，當 argument 某項不給數值，會按照 default 給。
 root = TreeNode(2, right=c2)
 print(root.left) # None
+
