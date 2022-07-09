@@ -16,7 +16,7 @@ Reference:
 class Solution:
     # 栈迭代遍历
     
-    def preorderTraversal(self, root: Optional[TreeNode]):
+    def preorderTraversal(self, root):
         if not root:
             return []
         
@@ -40,4 +40,4 @@ if __name__ == '__main__':
     # s = Solution()
     # res = s.preorderTraversal(root)
     # print('res: ', res)
-    
+    pass

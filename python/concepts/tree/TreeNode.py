@@ -44,5 +44,5 @@ if __name__ == '__main__':
     # postorder
     postorder(root)
     print(list_postorder)
-
     
+        
