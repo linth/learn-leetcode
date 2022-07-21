@@ -24,13 +24,15 @@ Reference
 """
 
 # Definition for a binary tree node.
-# class TreeNode:
-#     def __init__(self, val=0, left=None, right=None):
-#         self.val = val
-#         self.left = left
-#         self.right = right
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+        
+        
 class Solution:
-    def invertTree(self, root: TreeNode):
+    def invertTree(self, root):
         
         # recursive method
         return self.use_recursive(root)
@@ -74,9 +76,21 @@ class Solution:
 
 if __name__ == '__main__':
     root = [4,2,7,1,3,6,9]
-
+    
+    tn9 = TreeNode(9, None, None)
+    tn6 = TreeNode(6, None, None)
+    tn7 = TreeNode(7, tn6, tn9)
+    
+    tn1 = TreeNode(1, None, None)
+    tn3 = TreeNode(3, None, None)
+    tn2 = TreeNode(2, tn1, tn3)
+    
+    tn4 = TreeNode(4, tn2, tn7)
+        
+    
     s = Solution()
-    res = s.invertTree(root)
+    # res = s.invertTree(root)
+    res = s.invertTree(tn4)
     print('res', res)
 
 
