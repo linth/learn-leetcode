@@ -23,6 +23,7 @@ Reference:
 
 var twoSum = function(nums, target) {
 
+    // 請注意看 for-loop condition.
     for (let i=0, max=nums.length; i<max; i++) {
         for (let j=i+1, max_=nums.length; j<max_; j++) {
             if (nums[j] + nums[i] === target) {
@@ -30,6 +31,8 @@ var twoSum = function(nums, target) {
             }
         }
     }
+
+    // TODO: please find out another better way to solve the problem.
 };
 
 
