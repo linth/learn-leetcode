@@ -47,6 +47,33 @@ Reference
 };
 
 
+/**
+ * @param {number[]} nums1
+ * @param {number[]} nums2
+ * @return {number[]}
+ */
+ var intersect2 = function(nums1, nums2) {
+    
+    const dict = {};
+    const res = [];
+    
+    for (let i=0; i<nums1.length; i++) {
+        if (dict[nums1[i]]) {
+            dict[nums1[i]] += 1;
+        } else {
+            dict[nums1[i]] = 1;
+        }
+    }
+    
+    for (let i=0; i<nums2.length; i++) {
+        if (dict.hasOwnProperty(nums2[i]) && nums2[i] != 0) {
+            res.push(nums2[i]);
+            dict[nums2[i]] -= 1;
+        }
+    }
+    return res;
+};
+
 // var nums1 = [1, 2, 2, 1];
 // var nums2 = [2, 2];
 // var res = intersect(nums1, nums2);
@@ -56,4 +83,7 @@ var nums2 = [9, 4, 9, 8, 4];
 var res = intersect(nums1, nums2);
 console.log('res', res);
 
+
+var res2 = intersect2(nums1, nums2);
+console.log('res2', res2);
 
