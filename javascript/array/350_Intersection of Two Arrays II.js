@@ -52,7 +52,7 @@ Reference
  * @param {number[]} nums2
  * @return {number[]}
  */
- var intersect = function(nums1, nums2) {
+ var intersect2 = function(nums1, nums2) {
     
     const dict = {};
     const res = [];
@@ -84,6 +84,8 @@ var res = intersect(nums1, nums2);
 console.log('res', res);
 
 
-var res2 = intersect2(nums1, nums2);
+var nums3 = [1,2,2,1];
+var nums4 = [2, 2];
+var res2 = intersect2(nums3, nums4);
 console.log('res2', res2);
 
