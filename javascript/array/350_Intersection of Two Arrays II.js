@@ -52,7 +52,7 @@ Reference
  * @param {number[]} nums2
  * @return {number[]}
  */
- var intersect2 = function(nums1, nums2) {
+ var intersect = function(nums1, nums2) {
     
     const dict = {};
     const res = [];
@@ -66,7 +66,7 @@ Reference
     }
     
     for (let i=0; i<nums2.length; i++) {
-        if (dict.hasOwnProperty(nums2[i]) && nums2[i] != 0) {
+        if (dict.hasOwnProperty(nums2[i]) && dict[nums2[i]] != 0) {
             res.push(nums2[i]);
             dict[nums2[i]] -= 1;
         }
