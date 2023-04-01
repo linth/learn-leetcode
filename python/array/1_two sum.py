@@ -12,6 +12,7 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 Reference:
     - https://leetcode.com/problems/two-sum/
+    - https://www.youtube.com/watch?v=KLlXCFG5TnA
 """
 from typing import List
 
@@ -60,7 +61,7 @@ class Solution(object):
                 high = high - 1
 
 
-    def twoSum2(self, nums, target):
+    def hashmap_method(self, nums, target):
         """
         較佳解法
 
@@ -127,7 +128,7 @@ if __name__ == '__main__':
 
     s = Solution()
     # res = s.twoSum(nums, target)
-    res = s.twoSum2(nums, target)
+    res = s.hashmap_method(nums, target)
     # res = s.twoSum3(nums, target)
     # res = s.maxValueTwoSum(nums)
     print('res', res)
