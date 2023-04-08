@@ -26,11 +26,24 @@ class Solution(object):
             ans = max(ans, i-j+1)
             d[s[i]] = i+1
         return ans
+    
+    def optimize_method(self, s: str):
+        char_positions = {}
+        left_index, max_length = 0, 0
+        
+        for right_index, char in enumerate(s):
+            if char in char_positions and char_positions[char] >= left_index:
+                left_index = char_positions[char] + 1
+            char_positions[char] = right_index
+            max_length = max(max_length, right_index - left_index + 1)
+        
+        return max_length
 
     def lengthOfLongestSubstring2(self, s: str):
         """ brute force. """
         # https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/
         pass
+    
 
 
 if __name__ == '__main__':
