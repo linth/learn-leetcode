@@ -15,3 +15,4 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 # Reference:
   - https://leetcode.com/problems/two-sum/
   - https://www.youtube.com/watch?v=KLlXCFG5TnA
+  - https://github.com/halfrost/LeetCode-Go/tree/master/leetcode/0001.Two-Sum
