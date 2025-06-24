@@ -49,13 +49,13 @@ LeetCode Blind 75 中的 Graph 主題包含多個中等到困難難度的經典�
 
 此說明結合 Blind 75 Graph 題目特性與常見解題思維，幫助你快速掌握核心觀念。
 
-[1] https://takeuforward.org/interviews/blind-75-leetcode-problems-detailed-video-solutions
-[2] https://neetcode.io/practice?tab=blind75
-[3] https://www.youtube.com/watch?v=5QEitM6boaA
-[4] https://dev.to/educative/leetcode-blind-75-1e00
-[5] https://www.youtube.com/watch?v=KzKVa5sBPjc
-[6] https://www.youtube.com/watch?v=d_8QZ0x9yTo
-[7] https://www.youtube.com/watch?v=PHTldlyo-Xc
+[1] https://takeuforward.org/interviews/blind-75-leetcode-problems-detailed-video-solutions \
+[2] https://neetcode.io/practice?tab=blind75 \
+[3] https://www.youtube.com/watch?v=5QEitM6boaA \
+[4] https://dev.to/educative/leetcode-blind-75-1e00 \
+[5] https://www.youtube.com/watch?v=KzKVa5sBPjc \
+[6] https://www.youtube.com/watch?v=d_8QZ0x9yTo \
+[7] https://www.youtube.com/watch?v=PHTldlyo-Xc \
 [8] https://grokkingtechinterview.com/blind-75-leetcode-explained-when-to-use-it-and-when-to-move-beyond-it-f3a7cb1f5346
 
 
