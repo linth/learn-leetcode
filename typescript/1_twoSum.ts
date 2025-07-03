@@ -14,6 +14,10 @@
  * 時間複雜度：O(n) — 每個元素只看一次。
  * 空間複雜度：O(n) — 最壞情況要記住所有元素。
  * 
+ * 
+ * Reference:
+ *  - https://leetcode.com/problems/two-sum/description/
+ * 
  */
 
 function TS_twoSum(nums: number[], target: number): number[] {
